@@ -162,7 +162,7 @@ Memcached allows an atomic *add* operation that either works or fails because th
 NB because it merely associates a fingerprint with a three-icon sequence, this encoder would work just as well with 40-hex-digit PGP fingerprints or longer sequences.
 
 ## Considerations for further development ##
-* There code contains no automated tests
+* The code contains no automated tests
 * There are only dummy icons for the *10 icons* and *14 icons* methods, which are therefore unsuitable for testing
 * There is no exception handling or error reporting: errors will cause silent failures from the end-user perspective
 * There is no validation of parameters. For example, the fingerprint is used directly as a key for Memcached without checking whether it meets the requirements of such keys (including absence of spaces)
